@@ -1,14 +1,14 @@
 {
   "name": "package",
   "private": true,
-  "homepage": "https://github.com/KhileshSahu360/Weather.git",
+  "homepage": "https://KhileshSahu360.github.io/Weather",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "vite build && gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -17,7 +17,6 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.11",
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8"
@@ -26,10 +25,16 @@
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-vue": "^1.1.5",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "gh-pages": "^6.1.1",
+    "vite": "^5.1.4",
+    "vite-aliases": "^0.11.5",
+    "vite-plugin-gh-pages": "^0.4.1",
+    "vite-plugin-pages": "^0.32.0",
+    "vite-plugin-pwa": "^0.19.2"
   }
 }
